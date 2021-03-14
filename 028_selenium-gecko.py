@@ -11,14 +11,13 @@ def main():
     opt.headless = True
     driver = webdriver.Firefox(options=opt)
     driver.set_window_size(1024, 768)
+    driver.get(site)
     try:
-        driver.get(site)
         entry = driver.find_elements_by_class_name("content")
         for i in entry:
             print(i.text)
     except Exception as e:
         print("Hata {}".format(e))
-        driver.quit()
     finally:
         driver.quit()
 
