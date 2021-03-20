@@ -8,9 +8,9 @@ def main():
     sayac = 0
     while sayac < tekrar:
         fib.append(n1)
-        nth = n1 + n2
+        n3 = n1 + n2
         n1 = n2
-        n2 = nth
+        n2 = n3
         sayac += 1
     print("Fibonacci serisi: {} ".format(fib))
 
