@@ -28,11 +28,9 @@ async def main():
     if islem01.done():
         await islem02
     print("tüm görevler bitti...")
-    print("{} isleminin son değeri {}, {} islemin son değeri {}".format(islem01.get_name(), islem01.result(),
-                                                                        islem02.get_name(), islem02.result()))
+    print("{} isleminin son değeri {},\
+    {} islemin son değeri {}".format(islem01.get_name(), islem01.result(), islem02.get_name(), islem02.result()))
 
 
 if __name__ == "__main__":
     asyncio.run(main())
-
-
