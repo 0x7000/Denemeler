@@ -8,6 +8,7 @@ async def gorev1(param):
     while x <= 10:
         print(x, end=" ")
         x += 1
+    return x
 
 
 async def gorev2(param):
@@ -16,6 +17,7 @@ async def gorev2(param):
     while x <= 15:
         print(x, end=" ")
         x += 1
+    return x
 
 
 async def main():
@@ -26,6 +28,8 @@ async def main():
     if islem01.done():
         await islem02
     print("tüm görevler bitti...")
+    print("{} isleminin son değeri {}, {} islemin son değeri {}".format(islem01.get_name(), islem01.result(),
+                                                                        islem02.get_name(), islem02.result()))
 
 
 if __name__ == "__main__":
