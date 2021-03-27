@@ -4,9 +4,9 @@ import math
 
 def main():
     cmp = math.comb(49, 6)  # 49 adet içinde 6 seçilecek loto :) kombinasyon
-    print(f"Kombinasyon 49c6: {cmp:,} ")
+    print("Kombinasyon 49c6: {:,}".format(cmp))
     prm = math.perm(49, 6)  # 49 adet içinde sıralı olarak 6 seçilecek permütasyon
-    print(f"Permutasyon 49p6: {prm:,} ")
+    print("Permutasyon 49p6: {:,}".format(prm))
 
 
 if __name__ == '__main__':
