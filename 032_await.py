@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import asyncio
+from time import sleep
 
 
 async def gorev1(param):
@@ -22,7 +23,7 @@ async def gorev2(param):
 
 async def main():
     islem01 = asyncio.create_task(gorev1("görev 01 başladı"))
-    islem02 = asyncio.create_task(gorev2("görev 02 başladı"))
+    islem02 = asyncio.create_task(gorev2("\ngörev 02 başladı"))
     await islem01
     # islem bitince diğer isleme gececek
     if islem01.done():
