@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import asyncio
-from time import sleep
 
 
 async def gorev1(param):
