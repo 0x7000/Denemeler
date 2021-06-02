@@ -16,11 +16,14 @@ def main():
     # ekranı ortalamak için
     # 1920 / 3 = 640
     # 1080 / 3 = 360
-    w = int(genislik / 3)
-    h = int(yukseklik / 3)
+    px = 1336  # pencere yüksekliği
+    py = 768  # # pencere genişliği
+    w = int((genislik / 2) - (px / 2))
+    h = int((yukseklik / 2) - (py / 2))
     # penceremiz 720x200 boyutunda ve w ile h konumunda açılacak.
-    ekran = "{}x{}+{}+{}".format(720, 200, w, h)
+    ekran = "{}x{}+{}+{}".format(px, py, w, h)
     Pencere.geometry(ekran)
+
     Pencere.mainloop()
 
 
